@@ -23,6 +23,13 @@ you can rise to the surface and summon a flyable mount to get out of the water.
 usage
 ==========
 
+Customize the mounts by editing MultiMount.lua
+
+    UNDERWATER_MOUNT="Subdued Seahorse"
+    BOBBING_IN_WATER_MOUNT="Sandstone Drake"
+    FLYING_MOUNT="Bronze Drake Mount"
+    GROUND_MOUNT="Pinto"
+
 Use the slash commands in chatbox or macro
 
     /mm
@@ -36,8 +43,9 @@ More advanced uses could include compensation for failure to mount. As an exampl
 a [Goblin Glider](http://www.wowhead.com/spell=126392/goblin-glider "Goblin Glider") on all 
 my cloaks. If I get dismounted, I can hit my mount macro and it'll deploy automatically.
 
-This takes advantage of the fact that [Goblin Glider] won't deploy if you're on the ground
-(standing OR running both prevent it from deploying)
+This takes advantage of the fact that  [Goblin Glider](http://www.wowhead.com/spell=126392/goblin-glider "Goblin Glider")
+won't deploy if you're on the ground as standing or running on the ground both prevent 
+it from deploying.
 
     /mm [nomounted,nocombat]
     /use [nomounted,outdoors] 10
