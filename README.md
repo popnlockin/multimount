@@ -19,3 +19,26 @@ The one thing that MultiMount provides on-top is the implied conditional that sp
 
 This allows you to make use of aquatic mounts easily, but when it's time to get out of the water
 you can rise to the surface and summon a flyable mount to get out of the water.
+
+usage
+==========
+
+Use the slash commands in chatbox or macro
+
+    /mm
+    /multimount
+
+MultiMount will also honor conditionals 
+
+     /mm [nomounted,nocombat]
+     
+More advanced uses could include compensation for failure to mount. As an example, I have 
+a [Goblin Glider](http://www.wowhead.com/spell=126392/goblin-glider "Goblin Glider") on all 
+my cloaks. If I get dismounted, I can hit my mount macro and it'll deploy automatically.
+
+This takes advantage of the fact that [Goblin Glider] won't deploy if you're on the ground
+(standing OR running both prevent it from deploying)
+
+    /mm [nomounted,nocombat]
+    /use [nomounted,outdoors] 10
+
